@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (empty($data)) {
     echo "data is empty";
   } else {
-    file_put_contents('loot.txt', $data.'\r\n',FILE_APPEND);
+    file_put_contents('loot.txt', $data.'',FILE_APPEND);
   }
 }
 ?>
